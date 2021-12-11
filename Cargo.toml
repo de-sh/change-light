@@ -1,0 +1,24 @@
+[package]
+edition = "2021"
+name = "change-light"
+version = "0.1.0"
+
+[dependencies]
+bytes = "1.1.0"
+mquictt-client = { git = "https://github.com/mquictt/mquictt" }
+mquictt-server = { git = "https://github.com/mquictt/mquictt" }
+serde = "1"
+serde_json = "1"
+tokio = { features = ["macros", "rt"], version = "1.14.0" }
+
+[[bin]]
+name = "light-side"
+path = "src/light.rs"
+
+[[bin]]
+name = "app-side"
+path = "src/app.rs"
+
+[[bin]]
+name = "broker"
+path = "src/broker.rs"
