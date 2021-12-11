@@ -25,9 +25,9 @@ async fn main() {
         std::io::stdin()
             .read_line(&mut input)
             .expect("error: unable to read user input");
-        match dbg!(input.trim_end().parse::<u8>().unwrap()) {
+        match input.trim_end().parse::<u8>().unwrap() {
             1 => {
-                println!("1. Red\n2. Green\n3. Blue\n(default/empty = White)> ");
+                println!("1. Red\n2. Green\n3. Blue\n(others = White)> ");
                 input = String::new();
                 std::io::stdin()
                     .read_line(&mut input)
