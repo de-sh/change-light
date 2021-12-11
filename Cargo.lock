@@ -290,7 +290,7 @@ dependencies = [
 [[package]]
 name = "mquictt-client"
 version = "0.1.0"
-source = "git+https://github.com/mquictt/mquictt#1cee70f40aa82a5df368d6cd744601793daebb28"
+source = "git+https://github.com/mquictt/mquictt?branch=broadcast#8bdc3766f5f2822043ec4d3e8859c9b47931d603"
 dependencies = [
  "bytes",
  "log",
@@ -302,7 +302,7 @@ dependencies = [
 [[package]]
 name = "mquictt-core"
 version = "0.1.0"
-source = "git+https://github.com/mquictt/mquictt#1cee70f40aa82a5df368d6cd744601793daebb28"
+source = "git+https://github.com/mquictt/mquictt?branch=broadcast#8bdc3766f5f2822043ec4d3e8859c9b47931d603"
 dependencies = [
  "bytes",
  "flume",
@@ -315,12 +315,13 @@ dependencies = [
  "serde",
  "serde_json",
  "thiserror",
+ "tokio",
 ]
 
 [[package]]
 name = "mquictt-server"
 version = "0.1.0"
-source = "git+https://github.com/mquictt/mquictt#1cee70f40aa82a5df368d6cd744601793daebb28"
+source = "git+https://github.com/mquictt/mquictt?branch=broadcast#8bdc3766f5f2822043ec4d3e8859c9b47931d603"
 dependencies = [
  "bytes",
  "flume",
